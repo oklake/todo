@@ -27,5 +27,33 @@
 #       "yes": yup
 #       enabled: "ON"
 
-en:
-  hello: "Hello world"
+ru:
+  articles:
+    edit: "Редактировать"
+    destroy: "Удалить"
+    comments: "Комментарии"
+    add_comment: "Добавить комментарий"
+    create_comment: "Создать комментарий"
+    commenter: "Комментатор"
+    body: "Содержание"
+    public: "Публичный"
+
+
+ru:
+  activerecord:
+    errors:
+      models:
+        article:
+          attributes:
+            title:
+              blank: "Название не может быть пустым"
+            body:
+              blank: "Содержание не может быть пустым"
+
+
+ru:
+  articles:
+    status:
+      public: "Публичный"
+      private: "Приватный"
+      archived: "Архивированный"
