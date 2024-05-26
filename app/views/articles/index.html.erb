@@ -1,15 +1,36 @@
-<h1>Articles</h1>
+<h1>Планы</h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
+<p>У вас в планах <%= Article.public_count %> задач, начни пока не поздно!</p>
+<p>Если задача выполнена, нажми "delete"<p>
 
-<ul>
+<ul class="article-list">
   <% @articles.each do |article| %>
     <% unless article.archived? %>
-      <li>
+      <li class="article-item">
+        <div class="circle"></div>
         <%= link_to article.title, article %>
       </li>
     <% end %>
   <% end %>
 </ul>
 
-<%= link_to "New Article", new_article_path %>
+<%= link_to "Создать задачу", new_article_path %>
+
+<style>
+  .article-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .article-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Черный цвет кружочка, можно изменить */
+    border-radius: 50%;
+    margin-right: 10px; /* Отступ между кружочком и текстом */
+  }
+</style>
