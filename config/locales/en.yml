@@ -27,17 +27,8 @@
 #       "yes": yup
 #       enabled: "ON"
 
-ru:
-  articles:
-    edit: "Редактировать"
-    destroy: "Удалить"
-    comments: "Комментарии"
-    add_comment: "Добавить комментарий"
-    create_comment: "Создать комментарий"
-    commenter: "Комментатор"
-    body: "Содержание"
-    public: "Публичный"
-
+en:
+  hello: "Hello world"
 
 ru:
   activerecord:
@@ -46,14 +37,21 @@ ru:
         article:
           attributes:
             title:
-              blank: "Название не может быть пустым"
+              blank: "cannot be empty"
+              too_short: "is too short"
             body:
-              blank: "Содержание не может быть пустым"
+              blank: "cannot be empty"
+              too_short: "is too short"
+        user:
+          attributes:
+            password_confirmation:
+              confirmation: "Passwords don't match"
+        comment:
+          attributes:
+            commenter:
+              blank: "It can't be empty"
+              too_short: "The name is too short"
+            body:
+              blank: "It can't be empty"
+              too_short: "The message is too short"
 
-
-ru:
-  articles:
-    status:
-      public: "Публичный"
-      private: "Приватный"
-      archived: "Архивированный"

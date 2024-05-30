@@ -13,3 +13,91 @@
  *= require_tree .
  *= require_self
  */
+/* Общие настройки для body и html */
+
+/* Основные стили для заголовка и ссылок */
+header a {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #0056b3;
+}
+
+/* Общие стили для HTML и BODY */
+html, body {
+    height: 80%;
+    margin: 0 0 20px 0;
+    margin-top: 15px;
+    background-image: url('/assets/bestOFtheBest.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Стили для контейнера */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Стили для заголовков */
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Стили для секции комментариев */
+.comments-section {
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #d51212;
+    margin-bottom: 20px;
+}
+
+/* Стилизация кнопок и полей отправки */
+button, input[type="submit"] {
+    background-color: #8d58bb;
+    color: rgb(247, 233, 241);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #60c5ad;
+}
+
+/* Стили для формы комментариев */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Стилизация полей ввода текста и текстовых областей */
+input[type="text"], textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #cccccca6;
+    border-radius: 4px;
+}
+
+  
+  
+  
+  
+  
